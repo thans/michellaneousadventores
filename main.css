@@ -107,6 +107,10 @@ h1 {
     opacity: 1;
 }
 
+#nav:hover img.social {
+    width: 48px;
+}
+
 .navElement {
     position: relative;
     top: 3px;
@@ -163,6 +167,16 @@ h1 {
     margin-right: -5px;
     position: relative;
     top: -2px;
+}
+
+#socialMedia {
+  float: right;
+}
+
+img.social {
+    width: 24px;
+    height: auto;
+    transition: width .5s ease;
 }
 
 #welcome {
