@@ -28,7 +28,6 @@ h1 {
 
 .section {
     width: 100%;
-    height: 100%;
 }
 
 .titleContainer {
@@ -82,19 +81,14 @@ h1 {
     z-index: 200;
 }
 
-#skrollr-body {
-    height: 800%;
-}
-
 #content {
     width: 100%;
-    height: 100%;
-    position: fixed;
     z-index: 300;
 }
 
 #nav {
     position: fixed;
+    top: 0px;
     width: 100%;
     height: 50px;
     background-color: #555;
@@ -169,4 +163,12 @@ h1 {
     margin-right: -5px;
     position: relative;
     top: -2px;
+}
+
+#welcome {
+    height: 800px;
+}
+
+#june15 {
+    height: 500px;
 }

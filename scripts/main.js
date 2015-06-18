@@ -4,11 +4,5 @@ var s = skrollr.init();
 skrollr.menu.init(s, {
 
     //skrollr will smoothly animate to the new position using `animateTo`.
-    animate: true,
-
-    //This event is triggered right before we jump/animate to a new hash.
-    change: function(newHash, newTopPosition) {
-        console.log(newHash);
-        console.log(newTopPosition);
-    }
+    animate: true
 });
