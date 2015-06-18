@@ -1,26 +1,60 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>MitchellaneousadvenTores</title>
-  </head>
-  <body id="skrollr-body">
-    <div id="content">
-      <h1>Mitch and Tores Excellent Adventure</h1>
-      <div class="stop"></div>
-      <div class="stop"></div>
-      <div class="stop"></div>
-    </div>
-    <div id="mask"
-        data-0="opacity:0"
-        data-200="opacity:1"
-        data-400="opacity:0"
-        data-600="opacity:1"
-      >
-    </div>
-    <div id="map">
-      <image src="./images/worldmap.jpg" />
-    </div>
-    <script type="text/javascript" src="./bower_components/scrollr/dist/skrollr.min.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>MitchellaneousadvenTores</title>
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body id="skrollr-body">
+        <div id="content" data--100p="top:100%" data-800p="top:-800%">
+            <div id="welcome" class="section" data-menu-offset="0">
+                <div class="titleContainer">
+                    <h1>Mitch and Tore's Excellent Adventure</h1>
+                    <h3>#MITCHELLaneousAdvenTOREs</h3>
+                    <h3>scroll down to read more</h3>
+                </div>
+            </div>
+            <div id="june15" class="section" data-menu-offset="100p">
+                <div class="titleContainer">
+                    <h1>Mitch and Tore's Excellent Adventure</h1>
+                    <h3>#MITCHELLaneousAdvenTOREs</h3>
+                    <h3>scroll down to read more</h3>
+                </div>
+            </div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+        </div>
+        <div id="mask"
+             data-0p="opacity:0"
+             data-100p="opacity:1"
+             data-400p="opacity:0"
+             data-600p="opacity:1"
+                >
+        </div>
+        <div id="map">
+            <div class="eastCoast"
+                 data-0p="opacity:.5; display: block; top: 10%"
+                 data-100p="opacity: 0; top: -10%"
+                 data-101p="display: none;"
+                    >
+            </div>
+        </div>
+        <div id="nav">
+            <a class="navElement" href="#welcome">
+                <div class="circle"></div>
+                <div class="circleFill"></div>
+                <div class="label">Welcome</div>
+            </a>
+            <div class="navLine"></div>
+            <a class="navElement" href="#june15">
+                <div class="circle"></div>
+                <div class="circleFill"></div>
+                <div class="label">June 15</div>
+            </a>
+        </div>
+        <script type="text/javascript" src="./bower_components/skrollr/dist/skrollr.min.js"></script>
+        <script type="text/javascript" src="./bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
+        <script type="text/javascript" src="./scripts/main.js"></script>
+    </body>
 </html>

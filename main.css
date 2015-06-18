@@ -1,19 +1,172 @@
-body {
-  background-image: url("./images/worldmap.jpg");
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #555
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+@media (max-width: 500px), (max-height: 400px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+.titleContainer {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    margin-top: -150px;
 }
 
 #map {
-
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
 }
 
+.eastCoast {
+    position: fixed;
+    top: 0%;
+    background-image: url('./images/eastCoast.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+}
+
+/*.blur {*/
+    /*-webkit-filter: blur(5px);*/
+    /*-moz-filter: blur(5px);*/
+    /*-o-filter: blur(5px);*/
+    /*-ms-filter: blur(5px);*/
+    /*filter: blur(5px);*/
+/*}*/
+
 #mask {
-  position:absolute;
-  top: 0px;
-  left: 0px;
-  color: #FFFFFF;
-  width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+
+#skrollr-body {
+    height: 800%;
 }
 
 #content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+}
 
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #555;
+    z-index: 600;
+    padding: 12px;
+    transition: height .5s ease;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+#nav:hover {
+    height: 100px;
+}
+
+#nav:hover .label {
+    opacity: 1;
+}
+
+.navElement {
+    position: relative;
+    top: 3px;
+    margin-top: -7px;
+    color: white;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    transform: rotate(55deg);
+    display: inline-block;
+    margin-right: -4px;
+    transition: top .5s ease;
+    cursor: pointer;
+}
+
+.circle,
+.circleFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+}
+
+.circle {
+    border: 2px solid white;
+}
+
+.navElement:hover .circleFill {
+    opacity: 1;
+}
+
+.circleFill {
+    background: white;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.label {
+    position: absolute;
+    top: -2px;
+    left: 18px;
+    width: 100px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.navLine {
+    width: 6px;
+    height: 0px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-right: -5px;
+    position: relative;
+    top: -2px;
 }
