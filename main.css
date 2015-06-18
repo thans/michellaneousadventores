@@ -65,6 +65,19 @@ a {
     transform: scale(1.2);
 }
 
+.westCoast {
+    position: fixed;
+    top: 0%;
+    background-image: url('images/westCoast.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .test {
     width: 100%;
     height: 100%;
