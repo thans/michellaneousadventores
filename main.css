@@ -36,6 +36,10 @@ a {
     margin: auto;
 }
 
+.spacer {
+    height: 400px;
+}
+
 .titleContainer {
     position: absolute;
     top: 50%;
@@ -74,8 +78,8 @@ a {
     background-position: 50% 50%;
     width: 100%;
     height: 100%;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(2.0);
+    transform: scale(2.0);
 }
 
 .test {
@@ -217,4 +221,12 @@ img.social {
 
 .jump {
     font-weight: 600;
+}
+
+.paper {
+    border: 20px solid white;
+    width: 1000px;
+    margin: auto;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
