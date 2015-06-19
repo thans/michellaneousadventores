@@ -20,20 +20,37 @@
                 </div>
             </div>
             <div class="spacer"></div>
-            <div id="june15" class="section">
+            <div id="june15" class="section" data-menu-offset="-200">
                 <div class="paper">
                     <h2>Departure</h2>
                     <h3>Seattle to Bellingham | June 15, 2015</h3>
                     <p>We departed Seattle around 7:00 PM and caught a ride with my parents on their way back to Bellingham from a wedding in California.</p>
+                    <p>In Bellingham, we were greeted by my grandma Nanny Kenny visiting from Newfoundland, and my uncle Fabe visiting from Victoria. We enjoyed a beautiful sunset with some Strawberry Shortcake. We also got to witness Nanny Kenny demo her new e-cigarette she is trying out to help her quit smoking! Go Nan!</p>
+                    <p> - Mitchell</p>
                 </div>
-                <div id="sunset" class="photo">
+                <div id="sunset" class="photo"
+                        data-1100="transform: translateX(-200%) rotate(-3deg)"
+                        data-1300="transform: translateX(0%) rotate(2deg)">
                     <img src="images/panorama.jpg" />
                     <div class="caption">Sunset over Bellingham Bay</div>
                 </div>
+                <div id="deck" class="photo"
+                     data-1500="transform: translateX(200%) rotate(1deg)"
+                     data-1700="transform: translateX(0%) rotate(-4deg)">
+                    <img src="images/deck.jpg" />
+                    <div class="caption">Out on the Loeppky deck</div>
+                </div>
             </div>
-            <div class="section"></div>
-            <div class="section"></div>
-            <div class="section"></div>
+            <div class="spacer"></div>
+            <div id="june16" class="section" data-menu-offset="-200">
+                <div class="paper">
+                    <h2>Departure</h2>
+                    <h3>Bellingham to Vancouver to Toronto | June 16, 2015</h3>
+                    <p>We departed Seattle around 7:00 PM and caught a ride with my parents on their way back to Bellingham from a wedding in California.</p>
+                    <p>In Bellingham, we were greeted by my grandma Nanny Kenny visiting from Newfoundland, and my uncle Fabe visiting from Victoria. We enjoyed a beautiful sunset with some Strawberry Shortcake. We also got to witness Nanny Kenny demo her new e-cigarette she is trying out to help her quit smoking! Go Nan!</p>
+                    <p> - Mitchell</p>
+                </div>
+            </div>
         </div>
         <div id="map">
             <div class="eastCoast"
@@ -42,14 +59,29 @@
                  data-801p="display: none;"
                     >
             </div>
+            <!--data-749="display: none;"-->
+            <!--data-750="opacity: 0; filter: blur(0px); display: block; background-position-y: 84%;"-->
+            <!--data-1200="opacity: .5; filter: blur(2px);"-->
+            <!--data-1800="filter: blur(2px);"-->
+            <!--data-2000="filter: blur(0px); background-position-y: 84%;"-->
+            <!--data-3000="filter: blur(0px); background-position-y: 18%;"-->
+            <!--data-3200="filter: blur(2px);"-->
+            <!--data-3500="background-position-y: 18%; margin-left: 0%;"-->
+            <!--data-4000="opacity: .5; filter: blur(2px); background-position-y: -10%; margin-left: 20%;"-->
+            <!--data-4200="opacity: 0; filter: blur(0px); display: block;"-->
+            <!--data-4201="display: none;"-->
+            <div class="test"
+                 data-749="display: none;"
+                 data-750="opacity: 0; filter: blur(0px); display: block;"
+                 data-1200="opacity: .5; filter: blur(2px);"
+                 data-3000="opacity: .5; filter: blur(2px);"
+                 data-3500="opacity: 0; filter: blur(0px); display: block;"
+                 data-3501="display: none;">
             <div class="westCoast"
-                 data-799="display: none;"
-                 data-800="opacity: 0; filter: blur(0px); display: block; background-position-y: 84%;"
-                 data-900="opacity: .5; filter: blur(2px);"
-                 data-1700="opacity: .5; filter: blur(2px);"
-                 data-1800="opacity: 0; filter: blur(0px); display: block;"
-                 data-1801="display: none;"
+                    data-750="background-position-y: 84%; margin-left: 0%;"
+                    data-3200="background-position-y: -10%; margin-left: 20%;"
                     >
+            </div>
             </div>
         </div>
         <div id="nav">
@@ -67,8 +99,14 @@
             <div class="navLine"></div>
             <a class="navElement" href="#june15">
                 <div class="circle"></div>
-                <div class="circleFill" data-700="opacity: 0" data-800="opacity: 1" data-1000="opacity: 1" data-1050="opacity: 0"></div>
+                <div class="circleFill" data-700="opacity: 0" data-800="opacity: 1" data-3300="opacity: 1" data-3400="opacity: 0"></div>
                 <div class="label">June 15</div>
+            </a>
+            <div class="navLine"></div>
+            <a class="navElement" href="#june16">
+                <div class="circle"></div>
+                <div class="circleFill" data-3300="opacity: 0" data-3400="opacity: 1" data-5000="opacity: 1" data-5100="opacity: 0"></div>
+                <div class="label">June 16</div>
             </a>
 
         </div>

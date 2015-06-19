@@ -216,10 +216,6 @@ img.social {
     height: 800px;
 }
 
-#june15 {
-    height: 500px;
-}
-
 .jump {
     font-weight: 600;
 }
@@ -244,9 +240,4 @@ img.social {
 .photo .caption {
     text-align: left;
     margin-top: 10px;
-}
-
-#sunset {
-    -webkit-transform: rotate(2deg);
-    transform: rotate(2deg);
 }
