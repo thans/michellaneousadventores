@@ -108,6 +108,7 @@ a {
 #content {
     width: 100%;
     z-index: 300;
+    text-align: center;
 }
 
 #nav {
@@ -224,9 +225,28 @@ img.social {
 }
 
 .paper {
+    text-align: left;
     border: 20px solid white;
     width: 1000px;
-    margin: auto;
+    margin: 50px auto;
     background: white;
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.photo {
+    border: 20px solid white;
+    margin: 50px auto;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    display: inline-block;
+}
+
+.photo .caption {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#sunset {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
 }
