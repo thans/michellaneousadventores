@@ -25,6 +25,10 @@ a {
     color: #555;
 }
 
+.paper a {
+    text-decoration: underline;
+}
+
 @media (max-width: 500px), (max-height: 400px) {
     h1 {
         font-size: 32px;
@@ -121,7 +125,7 @@ a {
     padding: 12px;
     transition: height .5s ease;
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: hidden;
     color: white;
 }
 
@@ -199,7 +203,7 @@ a {
     float: right;
 }
 
-#socialMedia h3 {
+#socialMedia > h3 {
     margin: 0 4px 0 0;
     display: inline-block;
     line-height: 24px;
