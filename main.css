@@ -56,7 +56,6 @@ a {
 #map {
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 100;
 }
 
@@ -237,24 +236,31 @@ img.social {
     font-weight: 600;
 }
 
-.paper {
-    text-align: left;
-    border: 20px solid white;
-    width: 1000px;
-    margin: 50px auto;
-    background: white;
-    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
-}
-
+.video,
+.paper,
 .photo {
     border: 20px solid white;
     margin: 50px auto;
     background: white;
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.paper {
+    text-align: left;
+    width: 1000px;
+}
+
+.photo,
+.video {
     display: inline-block;
 }
 
 .photo .caption {
     text-align: left;
     margin-top: 10px;
+}
+
+#cnTowerDown,
+#error {
+    width: 840px;
 }
