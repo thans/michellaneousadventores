@@ -86,6 +86,10 @@ a {
     background-image: url('images/washingtonDC.jpg');
 }
 
+.map.philly {
+    background-image: url('images/philadelphia.jpg');
+}
+
 .map.westCoast {
     background-image: url('images/westCoast.jpg');
     -webkit-transform: scale(2.0);
