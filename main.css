@@ -146,7 +146,7 @@ a {
 
 .navLine {
     position: absolute;
-    width: 238px;
+    width: 250px;
     height: 2px;
     border: 1px solid white;
     display: inline-block;
