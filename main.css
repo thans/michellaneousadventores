@@ -101,14 +101,6 @@ a {
     height: 100%;
 }
 
-/*.blur {*/
-    /*-webkit-filter: blur(5px);*/
-    /*-moz-filter: blur(5px);*/
-    /*-o-filter: blur(5px);*/
-    /*-ms-filter: blur(5px);*/
-    /*filter: blur(5px);*/
-/*}*/
-
 #mask {
     position: fixed;
     top: 0px;
@@ -136,7 +128,7 @@ a {
     padding: 12px;
     transition: height .5s ease;
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
     color: white;
 }
 
@@ -145,26 +137,51 @@ a {
 }
 
 #nav:hover {
-    height: 100px;
+    height: 120px;
 }
 
 #nav:hover .label {
     opacity: 1;
 }
 
+.navLine {
+    position: absolute;
+    width: 238px;
+    height: 2px;
+    border: 1px solid white;
+    display: inline-block;
+    top: 24px;
+    left: 16px;
+}
+
 .navElement {
     position: relative;
-    top: 3px;
+    top: 2px;
     margin-top: -7px;
+    margin-right: 2px;
     width: 12px;
     height: 12px;
     font-size: 12px;
-    transform: rotate(55deg);
-    -webkit-transform: rotate(55deg);
     display: inline-block;
-    margin-right: -4px;
     transition: top .5s ease;
     cursor: pointer;
+    transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+}
+
+.lineNavElement {
+    font-weight: 600;
+}
+
+.line {
+    width: 2px;
+    height: 12px;
+    border: 1px solid white;
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
 }
 
 .circle,
@@ -178,6 +195,7 @@ a {
 }
 
 .circle {
+    background: #555;
     border: 2px solid white;
 }
 
@@ -200,16 +218,6 @@ a {
     transition: opacity .5s ease;
 }
 
-.navLine {
-    width: 6px;
-    height: 0px;
-    border: 1px solid white;
-    display: inline-block;
-    margin-right: -5px;
-    position: relative;
-    top: -2px;
-}
-
 #socialMedia {
     float: right;
 }
@@ -223,7 +231,7 @@ a {
 
 img.social {
     width: 24px;
-    height: auto;
+    height: 24px;
     transition: width .5s ease;
 }
 
