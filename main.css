@@ -90,6 +90,10 @@ a {
     background-image: url('images/philadelphia.jpg');
 }
 
+.map.newYork {
+    background-image: url('images/newYork.jpg');
+}
+
 .map.westCoast {
     background-image: url('images/westCoast.jpg');
     -webkit-transform: scale(2.0);
@@ -271,4 +275,49 @@ img.social {
 #error,
 #crazyTruck {
     width: 840px;
+}
+
+#mobileMap {
+    display: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    #mobileMap {
+        display: block;
+        background-image: url('images/eastCoast.jpg');
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    #map {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .paper, .photo, .video {
+        max-width: 95%;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+
+    .video iframe {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 414px) {
+    #welcome {
+        height: 500px;
+    }
+
+    .spacer {
+        height: 50px;
+    }
 }
