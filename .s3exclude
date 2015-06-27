@@ -1,0 +1,7 @@
+*.iml
+*.git/*
+*.s3exclude
+*.idea/*
+*.DS_Store
+*.gitignore
+bower.json
