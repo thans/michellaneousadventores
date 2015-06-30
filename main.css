@@ -48,7 +48,7 @@ a {
 
 .titleContainer {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     height: 300px;
@@ -320,4 +320,18 @@ img.social {
     .spacer {
         height: 50px;
     }
+}
+
+#instafeed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#instafeed > div {
+    margin-right: 30px;
 }
