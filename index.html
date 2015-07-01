@@ -8,10 +8,19 @@
         <link rel="icon" type="image/png" href="images/nyFavicon.png">
     </head>
     <body>
-        <div id="mobileMap" class="map"
+        <div class="loadingWindow">
+            <div class="spinner"></div>
+            <div class="loadingBar">
+                <div class="leftLine"></div>
+                <div class="rightLine"></div>
+                <div class="centerLine"></div>
+                <div class="fill"></div>
+            </div>
+        </div>
+        <div id="mobileMap" class="map hiddenLoading"
              data-0p="top: 10%;"
              data-65000="top: -10%;"></div>
-        <div id="map">
+        <div id="map" class="hiddenLoading">
             <div class="mapWrapper"
                  data-0="opacity: .5; filter: blur(2px);"
                  data-800="opacity: 0; filter: blur(0px); display: block;"
@@ -79,12 +88,12 @@
                  data-57500="opacity: .5; filter: blur(2px);">
                 <div class="map newYork"
                      data-57000="top: 10%"
-                     data-10000="top: -10%"
+                     data-100000="top: -10%"
                         >
                 </div>
             </div>
         </div>
-        <div id="nav">
+        <div id="nav" class="hiddenLoading">
             <div id="socialMedia">
                 <h3>#MITCHELLaneousAdvenTOREs</h3>
                 <a target="_blank" href="https://instagram.com/notoreous/">
@@ -193,7 +202,7 @@
                 <div class="label">June 30</div>
             </a>
         </div>
-        <div id="skrollr-body">
+        <div id="skrollr-body" class="hiddenLoading">
             <div id="content">
                 <div id="welcome" class="section">
                     <div class="titleContainer">
@@ -283,7 +292,7 @@
                     <div class="video"
                          data-7900="transform: translateX(-200%) rotate(-3deg)"
                          data-8100="transform: translateX(0%) rotate(0deg)">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/YLX44VEasEc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen seamless scrolling="no"></iframe>
+                        <div class="youtubePlayer" data-id="YLX44VEasEc"></div>
                     </div>
                     <div id="yongeDundasSquare" class="photo"
                          data-8700="transform: translateX(200%) rotate(1deg)"
@@ -583,7 +592,7 @@
                     <div class="video"
                          data-47700="transform: translateX(-200%)"
                          data-47900="transform: translateX(0%)">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/xCdNL7jFup4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <div class="youtubePlayer" data-id="xCdNL7jFup4"></div>
                     </div>
                     <div id="dcsunset" class="photo"
                          data-48300="transform: translateX(200%) rotate(1deg)"
@@ -622,7 +631,7 @@
                     <div class="video"
                          data-52300="transform: translateX(-200%)"
                          data-52500="transform: translateX(0%)">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/YGNw_9T9f4U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <div class="youtubePlayer" data-id="YGNw_9T9f4U"></div>
                     </div>
                     <div id="liberty" class="photo"
                          data-52900="transform: translateX(200%) rotate(1deg)"
@@ -684,7 +693,7 @@
                     <div class="video"
                          data-59600="transform: translateX(-200%)"
                          data-59800="transform: translateX(0%)">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/BbBf9Pp3dIA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <div class="youtubePlayer" data-id="BbBf9Pp3dIA"></div>
                     </div>
                     <div id="donuts" class="photo"
                          data-60400="transform: translateX(-200%) rotate(-3deg)"
@@ -698,287 +707,289 @@
                         <img src="images/ny/day0/squad.jpg" />
                         <div class="caption">Mitch, Becca and I after dessert!</div>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june25" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2>Becoming New Yorkers</h2>
-                            <h3>New York Day 1 | June 25, 2015</h3>
-                            <p>On September 11th, 2001, the World Trade Centers were destroyed by terrorists, but no matter how hard they try, they will never be able to break the spirit of liberty and justice that defines the United States of America. The new One World Trade Center (Freedom Tower) symbolizes that prevailing spirit.</p>
-                            <p>Today Tore and I got up and went to the observation level of the One World Trade Center. It is certainly the best 360 degree view of the city you can get. They also had very cool uses of technology with floor to ceiling screens in the elevators with cool graphics, and 8 screens mounted in a circle around a presenter who could control the content on the screens with a band on his arm. However, all the ways they were trying to get every dollar out of us detracted from the experience a bit (pay for an expedited pass, pay for photos, walk you through the gift shop, pay to rent iPads to point out buildings, etc.).</p>
-                            <p>As Tore and I looked over the edge of the fountains located at ground zero, we reflected on how brave the service men and women had to be to go into the burning towers, particularly in the second tower after the first had collapsed. Thanks to their efforts, over 47,000 people (94%) were able to escape the buildings.</p>
-                            <p>We then walked over to Wall street to have lunch with Becca at an awesome taco/burrito stand. After we said good bye to Becca, we explored the south east side waterfront.</p>
-                            <p>I have worn all my underwear, worn them inside out, worn them backwards, and even gone commando a few days, so Tore and I figured it was time to do some laundry. The thing to do in New York is to take your laundry to a laundromat where they will wash it and fold it for you and you pick it up the next day. Nobody has folded my laundry in 4 years, so that sounded appealing. Hopefully we get our clothes back tomorrow so I do not have to walk around New York naked for the rest of the trip.</p>
-                            <p>After a nap, we went to dinner at <a href="https://www.facebook.com/pages/The-Halal-Guys/157700344254837">Halal Guys</a> for street-side Middle Eastern food. It was super good, but way too much food! Fortunately a homeless man was happy to take our extras!</p>
-                            <p>To top the night off, we went to a broadway show: <a href="http://www.agentlemansguidebroadway.com/">A Gentleman's Guide to Love and Murder</a>. It was an excellent comedy musical, and I would highly recommend it! Thanks Becca for the recommendation!</p>
-                            <p>- Mitchell</p>
-                        </div>
-                        <div id="oneWorldSelfie" class="photo"
-                             data-62500="transform: translateX(-200%) rotate(-3deg)"
-                             data-62700="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day1/oneWorldSelfie.jpg" />
-                            <div class="caption">Selfie from the top of the One World Trade Center (sorry for the bad contrast).</div>
-                        </div>
-                        <div id="oneWorld" class="photo"
-                             data-63300="transform: translateX(-200%) rotate(-3deg)"
-                             data-63500="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day1/oneWorld.jpg" />
-                            <div class="caption">The Freedom Tower (One World Trade Center)!</div>
-                        </div>
-                        <div id="fountains" class="photo"
-                             data-64700="transform: translateX(200%) rotate(1deg)"
-                             data-64900="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day1/fountains.jpg" />
-                            <div class="caption">Fountain of the North World Trade Center.</div>
-                        </div>
-                        <div class="video"
-                             data-65500="transform: translateX(-200%)"
-                             data-65700="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/DQ0utS02R64?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div id="dinner" class="photo"
-                             data-66100="transform: translateX(-200%) rotate(-3deg)"
-                             data-66300="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day1/dinner.jpg" />
-                            <div class="caption">Tore enjoying his dinner!</div>
-                        </div>
-                        <div id="broadwayStage" class="photo"
-                             data-67100="transform: translateX(200%) rotate(1deg)"
-                             data-67300="transform: translateX(0%) rotate(-1deg)">
-                            <img src="images/ny/day1/broadwayStage.jpg" />
-                            <div class="caption">A quick shot of the stage for A Gentleman's Guide to Love and Murder.</div>
-                        </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june25" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2>Becoming New Yorkers</h2>
+                        <h3>New York Day 1 | June 25, 2015</h3>
+                        <p>On September 11th, 2001, the World Trade Centers were destroyed by terrorists, but no matter how hard they try, they will never be able to break the spirit of liberty and justice that defines the United States of America. The new One World Trade Center (Freedom Tower) symbolizes that prevailing spirit.</p>
+                        <p>Today Tore and I got up and went to the observation level of the One World Trade Center. It is certainly the best 360 degree view of the city you can get. They also had very cool uses of technology with floor to ceiling screens in the elevators with cool graphics, and 8 screens mounted in a circle around a presenter who could control the content on the screens with a band on his arm. However, all the ways they were trying to get every dollar out of us detracted from the experience a bit (pay for an expedited pass, pay for photos, walk you through the gift shop, pay to rent iPads to point out buildings, etc.).</p>
+                        <p>As Tore and I looked over the edge of the fountains located at ground zero, we reflected on how brave the service men and women had to be to go into the burning towers, particularly in the second tower after the first had collapsed. Thanks to their efforts, over 47,000 people (94%) were able to escape the buildings.</p>
+                        <p>We then walked over to Wall street to have lunch with Becca at an awesome taco/burrito stand. After we said good bye to Becca, we explored the south east side waterfront.</p>
+                        <p>I have worn all my underwear, worn them inside out, worn them backwards, and even gone commando a few days, so Tore and I figured it was time to do some laundry. The thing to do in New York is to take your laundry to a laundromat where they will wash it and fold it for you and you pick it up the next day. Nobody has folded my laundry in 4 years, so that sounded appealing. Hopefully we get our clothes back tomorrow so I do not have to walk around New York naked for the rest of the trip.</p>
+                        <p>After a nap, we went to dinner at <a href="https://www.facebook.com/pages/The-Halal-Guys/157700344254837">Halal Guys</a> for street-side Middle Eastern food. It was super good, but way too much food! Fortunately a homeless man was happy to take our extras!</p>
+                        <p>To top the night off, we went to a broadway show: <a href="http://www.agentlemansguidebroadway.com/">A Gentleman's Guide to Love and Murder</a>. It was an excellent comedy musical, and I would highly recommend it! Thanks Becca for the recommendation!</p>
+                        <p>- Mitchell</p>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june26" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2><a href="https://youtu.be/C7BakKHwXOg?t=31">Big City</a></h2>
-                            <h3>New York Day 2 | June 26, 2015</h3>
-                            <p>After another late start, but after collecting our (folded!) laundry, we decided to make our way to the UN building.  We plotted out a route to hit up the major sites on the way - the Rockefeller center, Grand Central Station, and the first lunch spot we stumbled upon.  The Rockefeller center was a nice building and I would love to come back during the Christmas season to go ice skating under the tree the place in front of the building.  Mitch and I also agreed that we loved what John D Rockefeller Jr. stood for - <a href="http://www.goodreads.com/quotes/147413-i-believe-in-the-supreme-worth-of-the-individual-and">he was quite a convicted man</a>.  Grand Central Station is quite a bustling place!  We have been having fun playing with timelapse videos (if you can't already tell), and the terminal was a prime spot for some footage!</p>
-                            <p><strong>The best bagels I have ever had</strong><br />We trusted Becca's recommendation for the Broadway show last night and that turned out alright, so we trusted her enought to walk a mile somewhat out of the way to go to Ees a bagel.  It was completely worth the walk!  Unfortunately, we hit the end of the lunch rush, so they were out of some things temporarily - but I am so glad I waited the extra 5 minutes for a fresh everything bagel!  Kyle and Eli always make fun of me for liking bagel sandwiches, but these could have turned even the most skeptical of food snobs.  The bagel was soft but kept its form, warm (fresh out of the oven!), and had delicious seasonings on top.  They also had great cream cheese topings - I had to get a strawberry bagel for dessert, while Mitch opted for the raisin walnut cream cheese on a cinnamon raisin bagel - it looked tasty.</p>
-                            <p><strong>8 million stories, 1 distinct smell</strong><br />They say New York is the city of 8 million stories, and I don't dispute that.  But the city generally just smells like garbage.  Fortunately there are enough street food vendors to mostly mask the smell with kebab fumes.  We joked about taking a picture every time we smelled the NYC garbage smell - but realized we would just have a picture on every block in the city!</p>
-                            <p><strong>Hipsterville</strong><br />Because it was a nice day, we wandered over to the High Line - an old, raised railroad track converted into a park and pedestrian walkway through the Chelsea neighborhood. It felt like a cool part of town, and the walkway was a nice zen garden in the midst of bustling New York City.  I would highly recommend a strong along the High Line to any visitors!  At the end of the walkway there was a city building project - city building with legos that is!  Mitch and I took up the task of representing Seattle by contributing a lego space needle!  We ran out of time at the end as they were closing, but it was coming along quite well.  So well, in fact, that people starting taking pictures of us building it by the end!</p>
-                            <p>We decided to go to Times Square and the top of the Rockefeller center at night - we already saw the city during the day from the One World Trade Center, so this seemed like a good compromise. Plus, there wouldn't be as many people at night, right? Wrong.  It was packed.  You had to wait in multiple lines just to get to the top.  And spoiler alert - the view of central park at night is kinda pointless.  It was nice to see the city lit up, but we both agreed the One World Trade Center was a better place to go.  Times Square was quite the spectacle though!  We had been avoiding looking at it during the day to save it for Friday night (whenever we got close, Mitch would say "No peeking!").  A must visit - at least once.  But probably not much more.  It is very commercialized (well, it is a bunch of advertisements, after all!) and lots of people, but good for time lapse videos!</p>
-                            <p>- Tore</p>
-                        </div>
-                        <div id="bagelsandwich" class="photo"
-                             data-69500="transform: translateX(-300%) rotate(-3deg)"
-                             data-69700="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day2/bagelsandwich.jpg" />
-                            <div class="caption">The best bagels you will ever have.</div>
-                        </div>
-                        <div id="unhq" class="photo"
-                             data-70100="transform: translateX(-200%) rotate(-3deg)"
-                             data-70300="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day2/unhq.jpg" />
-                            <div class="caption">General assembly in the UN HQ</div>
-                        </div>
-                        <div id="legospaceneedle" class="photo"
-                             data-70800="transform: translateX(200%) rotate(1deg)"
-                             data-71000="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day2/legospaceneedle.jpg" />
-                            <div class="caption">Our lego space needle!</div>
-                        </div>
-                        <div class="video"
-                             data-71800="transform: translateX(-200%)"
-                             data-72000="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/ykzNJ_RL6zg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div id="mitchtimessquare" class="photo"
-                             data-72500="transform: translateX(-200%) rotate(-3deg)"
-                             data-72700="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day2/mitchtimessquare.jpg" />
-                            <div class="caption">Mitch in Times Square</div>
-                        </div>
-                        <div id="nybynight" class="photo"
-                             data-73100="transform: translateX(200%) rotate(1deg)"
-                             data-73300="transform: translateX(0%) rotate(-1deg)">
-                            <img src="images/ny/day2/nybynight.jpg" />
-                            <div class="caption">New York by night from the Rockefeller center.  Empire State Building is front and center - the One World Trade Center in the distance.</div>
-                        </div>
+                    <div id="oneWorldSelfie" class="photo"
+                         data-62500="transform: translateX(-200%) rotate(-3deg)"
+                         data-62700="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day1/oneWorldSelfie.jpg" />
+                        <div class="caption">Selfie from the top of the One World Trade Center (sorry for the bad contrast).</div>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june27" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2>So Many Calories</h2>
-                            <h3>New York Day 3 | June 27, 2015</h3>
-                            <p>The recent supreme court ruling seemed to have spurred on the display of rainbow colored flags around the city and an increase in gay couples walking around in the city. This encouraged Tore and I to walk a little bit farther apart on the street today. It has already been slightly awkward each time we check into a new place with a single queen bed.</p>
-                            <p>I slept in, but Tore got us some mangos to start the day off right! We then subwayed to the iconic triangular, 21 floored <a href="https://en.wikipedia.org/wiki/Flatiron_Building">Flatiron building</a> adjacent to Madison Square Park. In the park is the <a href="https://www.shakeshack.com/location/madison-square-park/">Shake Shack</a> restaurant where we had lunch. I got a delicious burger with bacon and cheese sauce and a coffee shake. Tore had a burger with bacon, cheese, and peppers and a chocolate carmel concrete (milkshake eaten with a spoon).</p>
-                            <p>The goal was for today to be a museum day, but we only made it half way through the first museum. And that was the <a href="http://www.moma.org/">Museum of Modern Art (MoMA)</a>. There were a lot of things that were abstract or just uninteresting (as you would expect from a modern art museum), but there were also some cool things too. One of our favorites was a video of a bunch of shots looking at a mirror and then a hammer smashing through the mirror to reveal the image on the other side. Another favorite was of a <a href="http://www.moma.org/explore/inside_out/2015/03/26/future-couture-nervous-systems-kinematics-dress/">3D printed dress</a>. It was printed in a 2D plane, but when pulled up by the straps it forms a dress. My conclusion on the MoMA is that they presented a lot of interesting content in a very raw form. If they had made it their goal to use the art and concepts to entertain me (like the art forms in a Cirque du Soleil show) it could have been amazing, but that is probably museum heresy.</p>
-                            <p>After we were kicked out of the MoMA, we decided to go to the greatest landmark in all of New York: the <a href="https://www.apple.com/retail/fifthavenue/">5th Avenue Apple Store</a>. Really it is just like any Apple Store (tons of customers, people in blue shirts, and Apple Products), but the glass entrance is a nice touch.</p>
-                            <p>We have been playing a game for finding places to eat where we have find a spot in a one block radius (on any of the four blocks surrounding an intersection). It rained all afternoon and evening so wanted to find something close. However, doing this from the Apple Store left us with almost exclusively fancy restaurants, but we managed to find a hole in the wall sandwich spot.</p>
-                            <p>For dessert we were told we needed to get cheesecake from the best place in all of New York: <a href="http://www.twolittleredhens.com/">Two Little Red Hens</a>. I have tried a lot of cheesecakes in the last several years as a result of my Dad owning Chuckanut Bay Foods, but I would honestly say that this was the best tasting cheesecake I have ever had!</p>
-                            <p>On a whim, we decided to go see <a href="http://www.imdb.com/title/tt0369610/">Jurassic World</a> at an IMAX movie theater. The theater allowed us to pick our own seats when buying tickets, but Tore and I accidentally bought tickets for people in a wheelchair (because they were the only remaining spots for two people to sit together). We realized our mistake when there were no chairs to sit in. We got it fixed, but sat separately. The movie was an excellent experience, but I do not think it will go down in history as a classic movie.</p>
-                            <p>- Mitchell</p>
-                        </div>
-                        <div id="flatiron" class="photo"
-                             data-75700="transform: translateX(-300%) rotate(-3deg)"
-                             data-75900="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day3/flatiron.jpg" />
-                            <div class="caption">The iconic Flatiron building.</div>
-                        </div>
-                        <div id="soup" class="photo"
-                             data-76600="transform: translateX(-200%) rotate(-3deg)"
-                             data-76800="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day3/soup.jpg" />
-                            <div class="caption">Andy Warhol's Campbell's soup collection in MoMA.</div>
-                        </div>
-                        <div id="appleStore" class="photo"
-                             data-77400="transform: translateX(200%) rotate(1deg)"
-                             data-77600="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day3/appleStore.jpg" />
-                            <div class="caption">Outside the 5th Avenue Apple Store!</div>
-                        </div>
-                        <div class="video"
-                             data-78300="transform: translateX(-200%)"
-                             data-78500="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/HhekFwjDWm4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div id="dinnerNY3" class="photo"
-                             data-79000="transform: translateX(-200%) rotate(-3deg)"
-                             data-79200="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day3/dinner.jpg" />
-                            <div class="caption">Great sandwiches from <a href="http://angelassandwichshopnyc.com/">Angelas.</a></div>
-                        </div>
-                        <div id="cheesecake" class="photo"
-                             data-79800="transform: translateX(200%) rotate(1deg)"
-                             data-80000="transform: translateX(0%) rotate(-1deg)">
-                            <img src="images/ny/day3/cheesecake.jpg" />
-                            <div class="caption">Eating cheesecake from Two Little Red Hens.</div>
-                        </div>
+                    <div id="oneWorld" class="photo"
+                         data-63300="transform: translateX(-200%) rotate(-3deg)"
+                         data-63500="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day1/oneWorld.jpg" />
+                        <div class="caption">The Freedom Tower (One World Trade Center)!</div>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june28" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2>Sunday Lazy Sunday</h2>
-                            <h3>New York Day 4 | June 28, 2015</h3>
-                            <p>We keep getting up later and later... couldn't be because we go to bed later and later though...  Fortunately it was a lazy Sunday.  The plan for today was to go to church in and explore Brooklyn!  Brooklyn definitely has a different vibe that Manhattan.  It feels a lot smaller, at lot more approachable, a lot less busy, and a lot less crowded.  Well, at least the parts we were in.  I'm sure there are quite a few people commuting to/from Brooklyn every day and the bridges must get swamped, but it probably attracts a much different crowd.</p>
-                            <p>We tried to take the subway to church in the morning, only to find out that on Sundays the subway didn't stop where we were waiting - so we showed up almost half an hour late to <a href="https://www.brooklyntabernacle.org/">The Brooklyn Tabernacle</a>!  To my astonishment they were still singing worship songs.  In fact, the service was about half worship songs and half message, both segments taking an hour!  I haven't been to a 2 hour church service in a long time, or maybe I haven't ever been to one that long!  I can't say the sermon was particularly strong.  The worship was much different than usual with more dancing and a massive choir, but the pastor really did not seem to deliver a profound or insightful message.  But maybe he knows his crowd - the beautiful concert hall was packed!</p>
-                            <p>After church we had planned to go to Smorgasburg - a flea market that happens in Brooklyn every weekend.  Upon arriving at the park where it was supposed to be held, we discovered that it was in a different location on Saturdays than on Sundays, and we were in the Saturday location!  Another classic mistake that happens when travelling.  That brings the lessons learned today to: (1) make sure the public transit runs as expected on weekends, and (2) make sure that the place you are going to is both open AND the correct location for the current day :)</p>
-                            <p>At this point we were both getting pretty hungry, so we decided to break for brunch before taking the ferry to the Brooklyn Bridge Park (where Smorgasburg is held on Sundays).  The first 2 spots we stumbled upon for brunch were an Italian restaurant and a Cuban restaurant, which appeared to hardly modify their menus for Sunday brunch.  With our hearts set on bacon and eggs, we looked a few blocks North where we found the <a href="http://fatgoosewilliamsburg.com/">Fat Goose</a>.  Simple menu, excellent service, and good food - the perfect spot to eat brunch and capture a quick timelapse of our food.</p>
-                            <p>If you cant tell already, we have completely bought in to the timelapses.  Its more than a picture, yet different than a video - it seems to be the perfect way to convey traveling (unless you need sound for something).  And the ferry ride (and subsequent walk across the Brooklyn Bridge) proved to be ideal spots for timelapse footage!  We hope you have enjoyed seeing a snippet of what we see each day, because we sure think they are fun.</p>
-                            <p>For dinner, we decided to venture to Little Italy to see what all the hype was about.  We went to one of the more popular pizza joints in Manhattan (and the first pizza restaurant in the US!), <a href="http://www.firstpizza.com/">Lombardi's</a>.  I would definitely say it is in my all time top 5 for pizza, but Mitch said that Tavola's pie was better (see <a href="http://mitchellaneousadventores.com/#june24">June 24 pictures</a>)!</p>
-                            <p>Worn out from all the walking, we headed home for a few episodes of Parks and Recreation, and (maybe) an early bedtime.  Good night New York!</p>
-                            <p>- Tore</p>
-                        </div>
-                        <div id="brooklyntabernacle" class="photo"
-                             data-82100="transform: translateX(-300%) rotate(-3deg)"
-                             data-82300="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day4/brooklyntabernacle.jpg" />
-                            <div class="caption">The Brooklyn Tabernacle Church.</div>
-                        </div>
-                        <div id="underthebridge" class="photo"
-                             data-83000="transform: translateX(200%) rotate(-3deg)"
-                             data-83200="transform: translateX(0%) rotate(-1deg)">
-                            <img src="images/ny/day4/underthebridge.jpg" />
-                            <div class="caption">Under the Brooklyn Bridge on the ferry!</div>
-                        </div>
-                        <div id="mitchonthebridge" class="photo"
-                             data-83800="transform: translateX(-200%) rotate(1deg)"
-                             data-84000="transform: translateX(0%) rotate(1deg)">
-                            <img src="images/ny/day4/mitchonthebridge.jpg" />
-                            <div class="caption">Mitch on the Brooklyn Bridge</div>
-                        </div>
-                        <div class="video"
-                             data-84500="transform: translateX(-200%)"
-                             data-84700="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/1lyEhT8PNJA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div id="bridgeselfie" class="photo"
-                             data-85100="transform: translateX(-200%) rotate(-3deg)"
-                             data-85300="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day4/bridgeselfie.jpg" />
-                            <div class="caption">Selfie on the bridge: Tore is having no fun, and Mitch is having too much fun.</div>
-                        </div>
-                        <div class="video"
-                             data-85100="transform: translateX(-200%)"
-                             data-85300="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/T6aTTq0LBLc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                    <div id="fountains" class="photo"
+                         data-64700="transform: translateX(200%) rotate(1deg)"
+                         data-64900="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day1/fountains.jpg" />
+                        <div class="caption">Fountain of the North World Trade Center.</div>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june29" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2>More Museums</h2>
-                            <h3>New York Day 5 | June 29, 2015</h3>
-                            <p>It is starting to sound like a broken record, but I slept in until after 11 AM by which point Tore had already enjoyed a breakfast at a nearby coffee shop. We decided it would be another museum day so our first stop was the Museum of Arts and Design. We arrived to discover that it was closed so we went to the <a href="http://www.metmuseum.org/">Metropolitan Museum of Art</a>. The place is massive! I kid you not, I spent about an hour and a half intently reading and observing the exhibits, and then spent another hour and a half meandering around and still only saw about half of the museum before I was museumed out. One of my favorite exhibits was the European paintings. In particular, I really liked a painting of the moon shinning through the clouds onto a bay. Clearly the artist had some incredible skill at capturing the beauty of the scene. Other exhibits, like the modern art exhibit, included works that 10 ten year old could have busted out in 20 minutes and were not even cool. I think Tore is able to appreciate the fine arts a little better than me, so he enjoyed the museum a lot.</p>
-                            <p>We were ready for a recharge and decided to make our way to a nearby Starbucks for a "taste of home." On the way we found a cool bagel shop. As we enjoyed our bagels, I watched an elderly lady with a walker struggle to communicate with the gentleman behind the counter (and his first language was not english) while simultaneous watching a man who was drunk or drugged, fall asleep standing up and get kicked out of the store. After the entertainment subsided and we finished our bagels, we actually went to Starbucks and got pumped up on sugar and caffine.</p>
-                            <p>In Seattle, we had heard about an activity called "Escape the Room" where 2-6 people are placed in a room and they have to complete several puzzles within an hour to exit the room. There are a number of places that have different rooms to escape around New York, so we picked one to try it out! When we arrived, we discovered that no 2 person team had ever successfully escaped the space themed room we were about to enter in the hour timeframe. But we were determined that our recently earned Computer Engineering degrees were preparing us for this very moment. Sure enough, we completed the mission with 8 minutes to spare! It was a very fun activity that I look forward to doing again (maybe in Boston), and I would highly recommend it to anyone who likes riddles, puzzles, etc.</p>
-                            <p>We were ready for some food again, so we played the one block radius game to find a spot. We quickly located a $1 per slice pizza place. The had a deal of two slices of cheese pizza and a can of coke for $2.75 that we both went for! It was not the best pizza we have had in New York, but it was by far the best value for food we have had!</p>
-                            <p>- Mitchell</p>
-                        </div>
-                        <div id="breakfast" class="photo"
-                             data-87900="transform: translateX(-300%) rotate(-3deg)"
-                             data-88100="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day5/breakfast.jpg" />
-                            <div class="caption">Tore's breakfast.</div>
-                        </div>
-                        <div id="lunch" class="photo"
-                             data-89000="transform: translateX(200%) rotate(1deg)"
-                             data-89200="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day5/lunch.jpg" />
-                            <div class="caption">Lunch at streetside vendors before entering the museum.</div>
-                        </div>
-                        <div id="museum" class="photo"
-                             data-89700="transform: translateX(-200%) rotate(-3deg)"
-                             data-89900="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day5/museum.jpg" />
-                            <div class="caption">Outside the Metropolitan Museum of Art.</div>
-                        </div>
-                        <div id="mitchArt" class="photo"
-                             data-90400="transform: translateX(200%) rotate(1deg)"
-                             data-90600="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day5/mitchArt.jpg" />
-                            <div class="caption">My favorite artifact at the museum.</div>
-                        </div>
-                        <div id="centralpark" class="photo"
-                             data-91100="transform: translateX(-200%) rotate(-3deg)"
-                             data-91300="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day5/centralPark.jpg" />
-                            <div class="caption">Tore staring over Turtle Pond in Central Park.</div>
-                        </div>
-                        <div id="escape" class="photo"
-                             data-91800="transform: translateX(200%) rotate(1deg)"
-                             data-92000="transform: translateX(0%) rotate(-1deg)">
-                            <img src="images/ny/day5/escape.jpg" />
-                            <div class="caption">Victory escaping the room!</div>
-                        </div>
+                    <div class="video"
+                         data-65500="transform: translateX(-200%)"
+                         data-65700="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="DQ0utS02R64"></div>
                     </div>
-                    <div class="spacer"></div>
-                    <div id="june30" class="section" data-menu-offset="-200">
-                        <div class="paper">
-                            <h2>A Place Worth Returning To</h2>
-                            <h3>New York Day 6 | June 30, 2015</h3>
-                            <p>I found a favorite cafe in New York.  And it only took 2 tries!  They have good coffee, great pastries, and a wonderful atmosphere.  I wish I could say its the best coffee shop in Manhattan, but I know there are too many out there for me to make that claim.  Anyway, its called Fika, and its a Swedish cafe (and yes, I have been there 2 days in a row now).  When I studied abroad in Sweden, I loved to take my Fika breaks - short breaks during the day to grab a coffee with friends and just relax.  Thats probably part of the reason I like this cafe so much - its somewhat nostalgic for me (and its fun to hear people speaking Swedish!)  I have been hoping to find a place on this trip that I would end up going to more than once, and if we had more time, I would go back more than twice.  Its fun to travel and explore all the thousands of restaurants in New York City, but I think its more fun to find a place that you like so much you don’t feel like you are missing out on those thousands of other spots because you would just rather go back.</p>
-                            <p>Today was our last chance to check anything off our list, and there was one thing we had been saving for nice weather - biking through central park!  We rented a few bikes out online (huge discount for renting online - a little trip for your travelers) for 3 hours and headed to the park.  We did a lap around (a quick 10 km!) to check out the park and take some timelapse footage (what else!?).  Central Park is MASSIVE!  I am a big fan. It has a little bit of everything, especially if everything means baseball fields.  Seriously though, there are so. many. baseball diamonds!  26 to be exact!</p>
-                            <p>If I lived in New York (I could definitely see it, after spending a week here), I would definitely want to be close enough to central park that I could go for a run before or after work.  We ended up doing another lap around the park for good measure, and it makes me excited for potentially biking to work next year!</p>
-                            <p>Wtth nothing left on our list, we sought out a place to enjoy our remaining time in New York.  We found a spot for Happy Hour and sat out on the patio, enjoying some wings and calamari.  It was bar food, definitely not the best food in NY, but it tasted great after biking 20 km!  That seemed to really hit Mitch hard, and he was down for the count for the next few hours (napping).  So I found a bar to watch the US defeat Germany 2-0!  U-S-A!</p>
-                            <p>After waking Mitch up, we headed down to get standby tickets to a comedy show.  The place was PACKED!  There was a mob outside the door - all sold out, all out of standby tickets.  So we walked back to a scalper selling tickets on the corner.  Turns out he worked for a competing comedy club.  He offered us 2 tickets foe $30, and we were intrigued.  He showed us where the place was and who would be on stage, and told us the show started in 5 minutes and we would be the first in line (red flag number 1! The other place was packed!).  While I was at the ATM, Mitch overhead someone asking about the fine print on the tickets - “Must purchase a drink inside” (Red flag #2).  As we started to say we were no longer interested, the salesman lowered his target, almost pleading with us “okay, 2 for $20” - but we were over it at that point!  I guess you could call it the wizard story (*ahem* Walker) since nothing ended up happening and we went home.  Thats all for NY!</p>
-                            <p>>Tore</p>
-                        </div>
-                        <div id="bikingselfie" class="photo"
-                             data-94200="transform: translateX(-300%) rotate(-3deg)"
-                             data-94400="transform: translateX(0%) rotate(2deg)">
-                            <img src="images/ny/day6/bikingselfie.jpg" />
-                            <div class="caption">Biking in Central Park!</div>
-                        </div>
-                        <div id="chickenkebab" class="photo"
-                             data-95000="transform: translateX(200%) rotate(1deg)"
-                             data-95200="transform: translateX(0%) rotate(-3deg)">
-                            <img src="images/ny/day6/chickenkebab.jpg" />
-                            <div class="caption">Chicken kebab for lunch.  In the background, street performers are killing it!  Great sax/drums combo.</div>
-                        </div>
-                        <div class="video"
-                             data-95800="transform: translateX(-200%)"
-                             data-96000="transform: translateX(0%)">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/T6aTTq0LBLc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                    <div id="dinner" class="photo"
+                         data-66100="transform: translateX(-200%) rotate(-3deg)"
+                         data-66300="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day1/dinner.jpg" />
+                        <div class="caption">Tore enjoying his dinner!</div>
+                    </div>
+                    <div id="broadwayStage" class="photo"
+                         data-67100="transform: translateX(200%) rotate(1deg)"
+                         data-67300="transform: translateX(0%) rotate(-1deg)">
+                        <img src="images/ny/day1/broadwayStage.jpg" />
+                        <div class="caption">A quick shot of the stage for A Gentleman's Guide to Love and Murder.</div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june26" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2><a href="https://youtu.be/C7BakKHwXOg?t=31">Big City</a></h2>
+                        <h3>New York Day 2 | June 26, 2015</h3>
+                        <p>After another late start, but after collecting our (folded!) laundry, we decided to make our way to the UN building.  We plotted out a route to hit up the major sites on the way - the Rockefeller center, Grand Central Station, and the first lunch spot we stumbled upon.  The Rockefeller center was a nice building and I would love to come back during the Christmas season to go ice skating under the tree the place in front of the building.  Mitch and I also agreed that we loved what John D Rockefeller Jr. stood for - <a href="http://www.goodreads.com/quotes/147413-i-believe-in-the-supreme-worth-of-the-individual-and">he was quite a convicted man</a>.  Grand Central Station is quite a bustling place!  We have been having fun playing with timelapse videos (if you can't already tell), and the terminal was a prime spot for some footage!</p>
+                        <p><strong>The best bagels I have ever had</strong><br />We trusted Becca's recommendation for the Broadway show last night and that turned out alright, so we trusted her enought to walk a mile somewhat out of the way to go to Ees a bagel.  It was completely worth the walk!  Unfortunately, we hit the end of the lunch rush, so they were out of some things temporarily - but I am so glad I waited the extra 5 minutes for a fresh everything bagel!  Kyle and Eli always make fun of me for liking bagel sandwiches, but these could have turned even the most skeptical of food snobs.  The bagel was soft but kept its form, warm (fresh out of the oven!), and had delicious seasonings on top.  They also had great cream cheese topings - I had to get a strawberry bagel for dessert, while Mitch opted for the raisin walnut cream cheese on a cinnamon raisin bagel - it looked tasty.</p>
+                        <p><strong>8 million stories, 1 distinct smell</strong><br />They say New York is the city of 8 million stories, and I don't dispute that.  But the city generally just smells like garbage.  Fortunately there are enough street food vendors to mostly mask the smell with kebab fumes.  We joked about taking a picture every time we smelled the NYC garbage smell - but realized we would just have a picture on every block in the city!</p>
+                        <p><strong>Hipsterville</strong><br />Because it was a nice day, we wandered over to the High Line - an old, raised railroad track converted into a park and pedestrian walkway through the Chelsea neighborhood. It felt like a cool part of town, and the walkway was a nice zen garden in the midst of bustling New York City.  I would highly recommend a strong along the High Line to any visitors!  At the end of the walkway there was a city building project - city building with legos that is!  Mitch and I took up the task of representing Seattle by contributing a lego space needle!  We ran out of time at the end as they were closing, but it was coming along quite well.  So well, in fact, that people starting taking pictures of us building it by the end!</p>
+                        <p>We decided to go to Times Square and the top of the Rockefeller center at night - we already saw the city during the day from the One World Trade Center, so this seemed like a good compromise. Plus, there wouldn't be as many people at night, right? Wrong.  It was packed.  You had to wait in multiple lines just to get to the top.  And spoiler alert - the view of central park at night is kinda pointless.  It was nice to see the city lit up, but we both agreed the One World Trade Center was a better place to go.  Times Square was quite the spectacle though!  We had been avoiding looking at it during the day to save it for Friday night (whenever we got close, Mitch would say "No peeking!").  A must visit - at least once.  But probably not much more.  It is very commercialized (well, it is a bunch of advertisements, after all!) and lots of people, but good for time lapse videos!</p>
+                        <p>- Tore</p>
+                    </div>
+                    <div id="bagelsandwich" class="photo"
+                         data-69500="transform: translateX(-300%) rotate(-3deg)"
+                         data-69700="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day2/bagelsandwich.jpg" />
+                        <div class="caption">The best bagels you will ever have.</div>
+                    </div>
+                    <div id="unhq" class="photo"
+                         data-70100="transform: translateX(-200%) rotate(-3deg)"
+                         data-70300="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day2/unhq.jpg" />
+                        <div class="caption">General assembly in the UN HQ</div>
+                    </div>
+                    <div id="legospaceneedle" class="photo"
+                         data-70800="transform: translateX(200%) rotate(1deg)"
+                         data-71000="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day2/legospaceneedle.jpg" />
+                        <div class="caption">Our lego space needle!</div>
+                    </div>
+                    <div class="video"
+                         data-71800="transform: translateX(-200%)"
+                         data-72000="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="ykzNJ_RL6zg"></div>
+                    </div>
+                    <div id="mitchtimessquare" class="photo"
+                         data-72500="transform: translateX(-200%) rotate(-3deg)"
+                         data-72700="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day2/mitchtimessquare.jpg" />
+                        <div class="caption">Mitch in Times Square.</div>
+                    </div>
+                    <div id="nybynight" class="photo"
+                         data-73100="transform: translateX(200%) rotate(1deg)"
+                         data-73300="transform: translateX(0%) rotate(-1deg)">
+                        <img src="images/ny/day2/nybynight.jpg" />
+                        <div class="caption">New York by night from the Rockefeller center.  Empire State Building is front and center - the One World Trade Center in the distance.</div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june27" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2>So Many Calories</h2>
+                        <h3>New York Day 3 | June 27, 2015</h3>
+                        <p>The recent supreme court ruling seemed to have spurred on the display of rainbow colored flags around the city and an increase in gay couples walking around in the city. This encouraged Tore and I to walk a little bit farther apart on the street today. It has already been slightly awkward each time we check into a new place with a single queen bed.</p>
+                        <p>I slept in, but Tore got us some mangos to start the day off right! We then subwayed to the iconic triangular, 21 floored <a href="https://en.wikipedia.org/wiki/Flatiron_Building">Flatiron building</a> adjacent to Madison Square Park. In the park is the <a href="https://www.shakeshack.com/location/madison-square-park/">Shake Shack</a> restaurant where we had lunch. I got a delicious burger with bacon and cheese sauce and a coffee shake. Tore had a burger with bacon, cheese, and peppers and a chocolate carmel concrete (milkshake eaten with a spoon).</p>
+                        <p>The goal was for today to be a museum day, but we only made it half way through the first museum. And that was the <a href="http://www.moma.org/">Museum of Modern Art (MoMA)</a>. There were a lot of things that were abstract or just uninteresting (as you would expect from a modern art museum), but there were also some cool things too. One of our favorites was a video of a bunch of shots looking at a mirror and then a hammer smashing through the mirror to reveal the image on the other side. Another favorite was of a <a href="http://www.moma.org/explore/inside_out/2015/03/26/future-couture-nervous-systems-kinematics-dress/">3D printed dress</a>. It was printed in a 2D plane, but when pulled up by the straps it forms a dress. My conclusion on the MoMA is that they presented a lot of interesting content in a very raw form. If they had made it their goal to use the art and concepts to entertain me (like the art forms in a Cirque du Soleil show) it could have been amazing, but that is probably museum heresy.</p>
+                        <p>After we were kicked out of the MoMA, we decided to go to the greatest landmark in all of New York: the <a href="https://www.apple.com/retail/fifthavenue/">5th Avenue Apple Store</a>. Really it is just like any Apple Store (tons of customers, people in blue shirts, and Apple Products), but the glass entrance is a nice touch.</p>
+                        <p>We have been playing a game for finding places to eat where we have find a spot in a one block radius (on any of the four blocks surrounding an intersection). It rained all afternoon and evening so wanted to find something close. However, doing this from the Apple Store left us with almost exclusively fancy restaurants, but we managed to find a hole in the wall sandwich spot.</p>
+                        <p>For dessert we were told we needed to get cheesecake from the best place in all of New York: <a href="http://www.twolittleredhens.com/">Two Little Red Hens</a>. I have tried a lot of cheesecakes in the last several years as a result of my Dad owning Chuckanut Bay Foods, but I would honestly say that this was the best tasting cheesecake I have ever had!</p>
+                        <p>On a whim, we decided to go see <a href="http://www.imdb.com/title/tt0369610/">Jurassic World</a> at an IMAX movie theater. The theater allowed us to pick our own seats when buying tickets, but Tore and I accidentally bought tickets for people in a wheelchair (because they were the only remaining spots for two people to sit together). We realized our mistake when there were no chairs to sit in. We got it fixed, but sat separately. The movie was an excellent experience, but I do not think it will go down in history as a classic movie.</p>
+                        <p>- Mitchell</p>
+                    </div>
+                    <div id="flatiron" class="photo"
+                         data-75700="transform: translateX(-300%) rotate(-3deg)"
+                         data-75900="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day3/flatiron.jpg" />
+                        <div class="caption">The iconic Flatiron building.</div>
+                    </div>
+                    <div id="soup" class="photo"
+                         data-76600="transform: translateX(-200%) rotate(-3deg)"
+                         data-76800="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day3/soup.jpg" />
+                        <div class="caption">Andy Warhol's Campbell's soup collection in MoMA.</div>
+                    </div>
+                    <div id="appleStore" class="photo"
+                         data-77400="transform: translateX(200%) rotate(1deg)"
+                         data-77600="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day3/appleStore.jpg" />
+                        <div class="caption">Outside the 5th Avenue Apple Store!</div>
+                    </div>
+                    <div class="video"
+                         data-78300="transform: translateX(-200%)"
+                         data-78500="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="HhekFwjDWm4"></div>
+                    </div>
+                    <div id="dinnerNY3" class="photo"
+                         data-79000="transform: translateX(-200%) rotate(-3deg)"
+                         data-79200="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day3/dinner.jpg" />
+                        <div class="caption">Great sandwiches from <a href="http://angelassandwichshopnyc.com/">Angelas.</a></div>
+                    </div>
+                    <div id="cheesecake" class="photo"
+                         data-79800="transform: translateX(200%) rotate(1deg)"
+                         data-80000="transform: translateX(0%) rotate(-1deg)">
+                        <img src="images/ny/day3/cheesecake.jpg" />
+                        <div class="caption">Eating cheesecake from Two Little Red Hens.</div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june28" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2>Sunday Lazy Sunday</h2>
+                        <h3>New York Day 4 | June 28, 2015</h3>
+                        <p>We keep getting up later and later... couldn't be because we go to bed later and later though...  Fortunately it was a lazy Sunday.  The plan for today was to go to church in and explore Brooklyn!  Brooklyn definitely has a different vibe that Manhattan.  It feels a lot smaller, at lot more approachable, a lot less busy, and a lot less crowded.  Well, at least the parts we were in.  I'm sure there are quite a few people commuting to/from Brooklyn every day and the bridges must get swamped, but it probably attracts a much different crowd.</p>
+                        <p>We tried to take the subway to church in the morning, only to find out that on Sundays the subway didn't stop where we were waiting - so we showed up almost half an hour late to <a href="https://www.brooklyntabernacle.org/">The Brooklyn Tabernacle</a>!  To my astonishment they were still singing worship songs.  In fact, the service was about half worship songs and half message, both segments taking an hour!  I haven't been to a 2 hour church service in a long time, or maybe I haven't ever been to one that long!  I can't say the sermon was particularly strong.  The worship was much different than usual with more dancing and a massive choir, but the pastor really did not seem to deliver a profound or insightful message.  But maybe he knows his crowd - the beautiful concert hall was packed!</p>
+                        <p>After church we had planned to go to Smorgasburg - a flea market that happens in Brooklyn every weekend.  Upon arriving at the park where it was supposed to be held, we discovered that it was in a different location on Saturdays than on Sundays, and we were in the Saturday location!  Another classic mistake that happens when travelling.  That brings the lessons learned today to: (1) make sure the public transit runs as expected on weekends, and (2) make sure that the place you are going to is both open AND the correct location for the current day :)</p>
+                        <p>At this point we were both getting pretty hungry, so we decided to break for brunch before taking the ferry to the Brooklyn Bridge Park (where Smorgasburg is held on Sundays).  The first 2 spots we stumbled upon for brunch were an Italian restaurant and a Cuban restaurant, which appeared to hardly modify their menus for Sunday brunch.  With our hearts set on bacon and eggs, we looked a few blocks North where we found the <a href="http://fatgoosewilliamsburg.com/">Fat Goose</a>.  Simple menu, excellent service, and good food - the perfect spot to eat brunch and capture a quick timelapse of our food.</p>
+                        <p>If you cant tell already, we have completely bought in to the timelapses.  Its more than a picture, yet different than a video - it seems to be the perfect way to convey traveling (unless you need sound for something).  And the ferry ride (and subsequent walk across the Brooklyn Bridge) proved to be ideal spots for timelapse footage!  We hope you have enjoyed seeing a snippet of what we see each day, because we sure think they are fun.</p>
+                        <p>For dinner, we decided to venture to Little Italy to see what all the hype was about.  We went to one of the more popular pizza joints in Manhattan (and the first pizza restaurant in the US!), <a href="http://www.firstpizza.com/">Lombardi's</a>.  I would definitely say it is in my all time top 5 for pizza, but Mitch said that Tavola's pie was better (see <a href="http://mitchellaneousadventores.com/#june24">June 24 pictures</a>)!</p>
+                        <p>Worn out from all the walking, we headed home for a few episodes of Parks and Recreation, and (maybe) an early bedtime.  Good night New York!</p>
+                        <p>- Tore</p>
+                    </div>
+                    <div id="brooklyntabernacle" class="photo"
+                         data-82100="transform: translateX(-300%) rotate(-3deg)"
+                         data-82300="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day4/brooklyntabernacle.jpg" />
+                        <div class="caption">The Brooklyn Tabernacle Church.</div>
+                    </div>
+                    <div id="underthebridge" class="photo"
+                         data-83000="transform: translateX(200%) rotate(-3deg)"
+                         data-83200="transform: translateX(0%) rotate(-1deg)">
+                        <img src="images/ny/day4/underthebridge.jpg" />
+                        <div class="caption">Under the Brooklyn Bridge on the ferry!</div>
+                    </div>
+                    <div id="mitchonthebridge" class="photo"
+                         data-83800="transform: translateX(-200%) rotate(1deg)"
+                         data-84000="transform: translateX(0%) rotate(1deg)">
+                        <img src="images/ny/day4/mitchonthebridge.jpg" />
+                        <div class="caption">Mitch on the Brooklyn Bridge</div>
+                    </div>
+                    <div class="video"
+                         data-84500="transform: translateX(-200%)"
+                         data-84700="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="1lyEhT8PNJA"></div>
+                    </div>
+                    <div id="bridgeselfie" class="photo"
+                         data-85100="transform: translateX(-200%) rotate(-3deg)"
+                         data-85300="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day4/bridgeselfie.jpg" />
+                        <div class="caption">Selfie on the bridge: Tore is having no fun, and Mitch is having too much fun.</div>
+                    </div>
+                    <div class="video"
+                         data-85100="transform: translateX(-200%)"
+                         data-85300="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="T6aTTq0LBLc"></div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june29" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2>More Museums</h2>
+                        <h3>New York Day 5 | June 29, 2015</h3>
+                        <p>It is starting to sound like a broken record, but I slept in until after 11 AM by which point Tore had already enjoyed a breakfast at a nearby coffee shop. We decided it would be another museum day so our first stop was the Museum of Arts and Design. We arrived to discover that it was closed so we went to the <a href="http://www.metmuseum.org/">Metropolitan Museum of Art</a>. The place is massive! I kid you not, I spent about an hour and a half intently reading and observing the exhibits, and then spent another hour and a half meandering around and still only saw about half of the museum before I was museumed out. One of my favorite exhibits was the European paintings. In particular, I really liked a painting of the moon shinning through the clouds onto a bay. Clearly the artist had some incredible skill at capturing the beauty of the scene. Other exhibits, like the modern art exhibit, included works that 10 ten year old could have busted out in 20 minutes and were not even cool. I think Tore is able to appreciate the fine arts a little better than me, so he enjoyed the museum a lot.</p>
+                        <p>We were ready for a recharge and decided to make our way to a nearby Starbucks for a "taste of home." On the way we found a cool bagel shop. As we enjoyed our bagels, I watched an elderly lady with a walker struggle to communicate with the gentleman behind the counter (and his first language was not english) while simultaneous watching a man who was drunk or drugged, fall asleep standing up and get kicked out of the store. After the entertainment subsided and we finished our bagels, we actually went to Starbucks and got pumped up on sugar and caffine.</p>
+                        <p>In Seattle, we had heard about an activity called "Escape the Room" where 2-6 people are placed in a room and they have to complete several puzzles within an hour to exit the room. There are a number of places that have different rooms to escape around New York, so we picked one to try it out! When we arrived, we discovered that no 2 person team had ever successfully escaped the space themed room we were about to enter in the hour timeframe. But we were determined that our recently earned Computer Engineering degrees were preparing us for this very moment. Sure enough, we completed the mission with 8 minutes to spare! It was a very fun activity that I look forward to doing again (maybe in Boston), and I would highly recommend it to anyone who likes riddles, puzzles, etc.</p>
+                        <p>We were ready for some food again, so we played the one block radius game to find a spot. We quickly located a $1 per slice pizza place. The had a deal of two slices of cheese pizza and a can of coke for $2.75 that we both went for! It was not the best pizza we have had in New York, but it was by far the best value for food we have had!</p>
+                        <p>- Mitchell</p>
+                    </div>
+                    <div id="breakfast" class="photo"
+                         data-87900="transform: translateX(-300%) rotate(-3deg)"
+                         data-88100="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day5/breakfast.jpg" />
+                        <div class="caption">Tore's breakfast.</div>
+                    </div>
+                    <div id="lunch" class="photo"
+                         data-89000="transform: translateX(200%) rotate(1deg)"
+                         data-89200="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day5/lunch.jpg" />
+                        <div class="caption">Lunch at streetside vendors before entering the museum.</div>
+                    </div>
+                    <div id="museum" class="photo"
+                         data-89700="transform: translateX(-200%) rotate(-3deg)"
+                         data-89900="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day5/museum.jpg" />
+                        <div class="caption">Outside the Metropolitan Museum of Art.</div>
+                    </div>
+                    <div id="mitchArt" class="photo"
+                         data-90400="transform: translateX(200%) rotate(1deg)"
+                         data-90600="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day5/mitchArt.jpg" />
+                        <div class="caption">My favorite artifact at the museum.</div>
+                    </div>
+                    <div id="centralpark" class="photo"
+                         data-91100="transform: translateX(-200%) rotate(-3deg)"
+                         data-91300="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day5/centralPark.jpg" />
+                        <div class="caption">Tore staring over Turtle Pond in Central Park.</div>
+                    </div>
+                    <div id="escape" class="photo"
+                         data-91800="transform: translateX(200%) rotate(1deg)"
+                         data-92000="transform: translateX(0%) rotate(-1deg)">
+                        <img src="images/ny/day5/escape.jpg" />
+                        <div class="caption">Victory escaping the room!</div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div id="june30" class="section" data-menu-offset="-200">
+                    <div class="paper">
+                        <h2>A Place Worth Returning To</h2>
+                        <h3>New York Day 6 | June 30, 2015</h3>
+                        <p>I found a favorite cafe in New York.  And it only took 2 tries!  They have good coffee, great pastries, and a wonderful atmosphere.  I wish I could say its the best coffee shop in Manhattan, but I know there are too many out there for me to make that claim.  Anyway, its called Fika, and its a Swedish cafe (and yes, I have been there 2 days in a row now).  When I studied abroad in Sweden, I loved to take my Fika breaks - short breaks during the day to grab a coffee with friends and just relax.  Thats probably part of the reason I like this cafe so much - its somewhat nostalgic for me (and its fun to hear people speaking Swedish!)  I have been hoping to find a place on this trip that I would end up going to more than once, and if we had more time, I would go back more than twice.  Its fun to travel and explore all the thousands of restaurants in New York City, but I think its more fun to find a place that you like so much you don’t feel like you are missing out on those thousands of other spots because you would just rather go back.</p>
+                        <p>Today was our last chance to check anything off our list, and there was one thing we had been saving for nice weather - biking through central park!  We rented a few bikes out online (huge discount for renting online - a little trip for your travelers) for 3 hours and headed to the park.  We did a lap around (a quick 10 km!) to check out the park and take some timelapse footage (what else!?).  Central Park is MASSIVE!  I am a big fan. It has a little bit of everything, especially if everything means baseball fields.  Seriously though, there are so. many. baseball diamonds!  26 to be exact!</p>
+                        <p>If I lived in New York (I could definitely see it, after spending a week here), I would definitely want to be close enough to central park that I could go for a run before or after work.  We ended up doing another lap around the park for good measure, and it makes me excited for potentially biking to work next year!</p>
+                        <p>Wtth nothing left on our list, we sought out a place to enjoy our remaining time in New York.  We found a spot for Happy Hour and sat out on the patio, enjoying some wings and calamari.  It was bar food, definitely not the best food in NY, but it tasted great after biking 20 km!  That seemed to really hit Mitch hard, and he was down for the count for the next few hours (napping).  So I found a bar to watch the US defeat Germany 2-0!  U-S-A!</p>
+                        <p>After waking Mitch up, we headed down to get standby tickets to a comedy show.  The place was PACKED!  There was a mob outside the door - all sold out, all out of standby tickets.  So we walked back to a scalper selling tickets on the corner.  Turns out he worked for a competing comedy club.  He offered us 2 tickets foe $30, and we were intrigued.  He showed us where the place was and who would be on stage, and told us the show started in 5 minutes and we would be the first in line (red flag number 1! The other place was packed!).  While I was at the ATM, Mitch overhead someone asking about the fine print on the tickets - “Must purchase a drink inside” (Red flag #2).  As we started to say we were no longer interested, the salesman lowered his target, almost pleading with us “okay, 2 for $20” - but we were over it at that point!  I guess you could call it the wizard story (*ahem* Walker) since nothing ended up happening and we went home.  Thats all for NY!</p>
+                        <p>>Tore</p>
+                    </div>
+                    <div id="bikingselfie" class="photo"
+                         data-94200="transform: translateX(-300%) rotate(-3deg)"
+                         data-94400="transform: translateX(0%) rotate(2deg)">
+                        <img src="images/ny/day6/bikingselfie.jpg" />
+                        <div class="caption">Biking in Central Park!</div>
+                    </div>
+                    <div id="chickenkebab" class="photo"
+                         data-95000="transform: translateX(200%) rotate(1deg)"
+                         data-95200="transform: translateX(0%) rotate(-3deg)">
+                        <img src="images/ny/day6/chickenkebab.jpg" />
+                        <div class="caption">Chicken kebab for lunch.  In the background, street performers are killing it!  Great sax/drums combo.</div>
+                    </div>
+                    <div class="video"
+                         data-95800="transform: translateX(-200%)"
+                         data-96000="transform: translateX(0%)">
+                        <div class="youtubePlayer" data-id="SUQz0o89Zgg"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="./bower_components/skrollr/dist/skrollr.min.js"></script>
         <script type="text/javascript" src="./bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
         <script type="text/javascript" src="./bower_components/instafeed.js/instafeed.min.js"></script>
+        <script type="text/javascript" src="./bower_components/waitForImages/dist/jquery.waitforimages.min.js"></script>
         <script type="text/javascript" src="./scripts/main.js"></script>
     </body>
 </html>

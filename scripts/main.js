@@ -60,4 +60,30 @@
             }
         }, speed);
     }
+
+    $('body').waitForImages(function() {
+        s.setScrollTop(0);
+        $('.loadingBar .fill').width('100%');
+        $('.hiddenLoading').removeClass('hiddenLoading');
+        $('.loadingWindow').addClass('hiddenLoading');
+    }, function(loaded, count, success) {
+        $('.loadingBar .fill').width(100*loaded/count + '%');
+        console.log(success);
+    });
+
+
+    function labnolThumb(id) {
+        return '<img class="youtubeThumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="playButton"></div>';
+    }
+
+    function labnolIframe(event) {
+        $(this).html($('<iframe src="http://www.youtube.com/embed/' + event.data.id + '?autoplay=1&rel=0&showinfo=0" width="853" height="480" frameborder="0" class="youtubeIframe" allowfullscreen></iframe>'));
+    }
+
+    $('.video').each(function() {
+        var thiz = $(this);
+        var id = thiz.find('.youtubePlayer').data('id');
+        thiz.append(labnolThumb(id));
+        thiz.click({ id : id }, labnolIframe);
+    });
 }());

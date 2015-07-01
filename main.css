@@ -6,7 +6,9 @@ body, html {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #555
+    color: #555;
+    height: 100%;
+    width: 100%;
 }
 
 * {
@@ -264,6 +266,7 @@ img.social {
 .photo,
 .video {
     display: inline-block;
+    overflow: hidden;
 }
 
 .photo .caption {
@@ -287,6 +290,10 @@ img.social {
         background-image: url('images/eastCoast.jpg');
         -webkit-filter: blur(2px);
         filter: blur(2px);
+    }
+
+    #mobileMap.hiddenLoading {
+        display: none;
     }
 
     #map {
@@ -334,4 +341,119 @@ img.social {
 
 #instafeed > div {
     margin-right: 30px;
+}
+
+.hiddenLoading {
+    display: none;
+}
+
+.loadingWindow {
+    width: 100%;
+    height: 100%;
+    background: #555;
+
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    opacity: .8;
+
+    position: fixed;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
+.loadingBar {
+    height: 12px;
+    width: 150px;
+    position: fixed;
+    left: calc(50% - 75px);
+    top: calc(50% - 6px + 50px);
+    opacity: .8;
+}
+
+.loadingBar .leftLine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid white;
+}
+
+.loadingBar .rightLine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+.loadingBar .centerLine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid white;
+    top: 50%;
+}
+
+.loadingBar .fill {
+    position: absolute;
+    background: white;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    transition: width .25s ease;
+}
+
+.youtubePlayer {
+    display: block;
+    width: 853px;
+    height: 480px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img.youtubeThumb {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto
+}
+
+div.playButton {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("http://i.imgur.com/TxzC70f.png") no-repeat;
 }
