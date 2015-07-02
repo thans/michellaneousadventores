@@ -96,6 +96,10 @@ a {
     background-image: url('images/newYork.jpg');
 }
 
+.map.boston {
+    background-image: url('images/boston.jpg');
+}
+
 .map.westCoast {
     background-image: url('images/westCoast.jpg');
     -webkit-transform: scale(2.0);
@@ -152,7 +156,7 @@ a {
 
 .navLine {
     position: absolute;
-    width: 360px;
+    width: 406px;
     height: 2px;
     border: 1px solid white;
     display: inline-block;
