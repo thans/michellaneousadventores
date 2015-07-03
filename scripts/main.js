@@ -68,12 +68,11 @@
         $('.loadingWindow').addClass('hiddenLoading');
     }, function(loaded, count, success) {
         $('.loadingBar .fill').width(100*loaded/count + '%');
-        console.log(success);
     });
 
 
     function labnolThumb(id) {
-        return '<img class="youtubeThumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="playButton"></div>';
+        return '<img class="youtubeThumb" src="http://i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="playButton"></div>';
     }
 
     function labnolIframe(event) {
